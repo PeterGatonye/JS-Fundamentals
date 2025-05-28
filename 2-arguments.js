@@ -1,9 +1,19 @@
-const myVar = 'No argument';
-console.log(myVar);
 
-const myVar1 = 'Argument found';
-console.log(myVar1);
+if(process.argv.length <= 2) {
 
-const myVar2 = 'Arguments found';
-console.log(myVar2);
+console.log('No argument');
+
+} else if(process.argv.length <=3) {
+
+console.log('Argument found');
+
+} else {
+
+console.log('Arguments found');
+
+}
+
+ 
+
+
 
